@@ -119,6 +119,8 @@ but in this early version because ElasticSearch's API has IDs based on Strings a
 to sort the stream lexicographically (all serious DB's should allow this, for MS SQL Server the above example does "... order
 by cast(id as varchar(100))" ) and it's fast..
 
+For MySQL, you want to do `ORDER BY CAST(id as CHAR)`
+
 ElasticSearch
 =============
 
